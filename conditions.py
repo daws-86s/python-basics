@@ -1,5 +1,5 @@
 # Python is case sensitive i.e. 'a' and "A" are different
-enviornment = "PROD"
+enviornment = input("Enter your envionment: ")
 change_ticket = False
 
 enviornment = enviornment.casefold()
