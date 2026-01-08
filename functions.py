@@ -33,8 +33,11 @@ def calc(a, b, operation):
     if operation == "div":
         return a % b
 
-values = tuple(input("Enter 2 numbers: "))
+def sample(var):
+    return int(var) + 1
+
+# values = list(map(sample, input("Enter 2 numbers: ").split()))
+a, b = tuple(map(int, input("Enter 2 numbers: ").split()))
 operation = input("Enter operation to perform (add, sub, mult, div): ")
-print(values)
-print(tuple(map(int, values)))
-# res = calc(a, b, operation)
+res = calc(a, b, operation)
+print(res)
